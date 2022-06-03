@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Project {{ project.name }} - HTML Editor and Sharer</title>
+  </head>
+  <body>
+    <script proj_name="{{ project.name }}" proj_html="{{ project.html }}" proj_css="{{ project.css }}" proj_js="{{ project.js }}" src={{ url_for("static", filename="scripts/view-project.js") }}></script>
+  </body>
+</html>
